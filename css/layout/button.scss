@@ -1,0 +1,26 @@
+.button {
+    background: $red;
+    color: #fff;
+    font-family: "ubuntumedium";
+    font-size: 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    padding: 10px 20px;
+    border: none;
+
+    &:hover {
+        background: #c1401e;
+    }
+
+    &_background_black {
+        background: $black;
+        &:hover {
+            background: #000;
+        }
+    }
+
+
+}

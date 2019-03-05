@@ -1,0 +1,106 @@
+.team {
+    background: url('../../images/bg/SBS_1255-X2.png') center center / cover no-repeat;
+} 
+
+.team__content {
+    position: absolute;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    padding: 67px;
+    height: 100%;
+}
+
+.team__list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+width: 340px;
+padding-left: 26px;
+}
+
+.team__name {
+color: #ffffff;
+font-family: 'gagalinregular';
+font-size: 14px;
+}
+
+.team__posicion {
+font-size: rem(14);
+color: #ffffff;
+font-family: 'ubuntubold';
+margin-bottom: 15px;
+}
+
+
+.team__text {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    line-height: 2;
+}
+
+.team__description {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+}
+
+.team__item,
+.team__link {
+    text-decoration: none;
+    position: relative; 
+}
+
+.team__photo {
+    width: 100%;
+}
+
+.team__image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.team__name:before,
+.team__name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -1rem;
+    top: 0.4rem;
+    width: 0;
+    height: 0;
+
+}
+
+.team__name:before {
+    border-top: 0.4375rem solid #f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+.team__name:after {
+    display: none;
+    border-bottom: 0.4375rem solid #f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0rem solid transparent;
+}
+
+.team__item.active .team__name::before {
+    transform: rotate(-90deg);
+}
+
+.team__item.active .team__name {
+    color: #f9b43b;
+}

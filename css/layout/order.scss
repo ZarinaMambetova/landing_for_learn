@@ -1,0 +1,24 @@
+.order {
+    background: url('../../images/bg/form-bg.png') center center / cover no-repeat;
+}
+
+.form__row {
+    display: flex;
+
+}
+
+.form__block {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__block-input {
+border: none;
+border-radius: 5px;
+padding: 5px 10px;
+// width: 100%;
+background: #fff;
+}

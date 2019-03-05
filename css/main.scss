@@ -1,0 +1,83 @@
+//colors
+$orange: #f9b43b;
+$black: #2f3234; 
+$red: #e45028;
+
+@import "normalize";
+@import "layout/fonts";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/button";
+@import "layout/title";
+@import "layout/we";
+@import "layout/team";
+@import "layout/burgers";
+@import "layout/menu";
+@import "layout/reviews";
+@import "layout/work";
+@import "layout/order";
+@import "layout/contacts";
+
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body { 
+    font-size: 16px;
+    line-height: 1.42;
+    position: relative;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-width: 940px;
+}
+
+.maincontent {
+    height: 100%;
+}
+
+.conteiner {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    min-height: 650px; 
+    
+    &_centered {
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+        .conteiner {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+}
+}
+
+
+
+    p, h1, h2, h3, h4, h5 {
+        margin: 0;
+        font-weight: normal;
+      }
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+

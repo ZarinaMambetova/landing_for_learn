@@ -1,0 +1,53 @@
+
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.hero__conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero__button {
+    margin-left: 15px;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .75;
+}
+
+.hero__content-subtitle {
+    color: #fff;
+    font-size: 55px;
+    font-family: 'lifehackmedium';
+}
+
+.arrow-scroll {
+    justify-content: center;
+    position: absolute;
+}
+
+.arrow-scroll_info {
+    left: 45%;
+    bottom: 50px;
+    transform: translateX(50%);
+    width: 29px;
+    height: 15px;
+    
+    }
+
+    .content__link_icon {
+        fill: #ffffff;
+        width: 100%;
+        height: 100%;
+    }

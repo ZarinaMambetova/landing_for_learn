@@ -1,0 +1,36 @@
+ .we {
+     background: url('../../images/bg/bg-we.png') center center / cover no-repeat;
+ }
+
+.about__list {
+    display: flex;
+}
+
+.about__item {
+    flex: 1;
+    margin-right: 15px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.about__icon {
+    display: inline-block;
+}
+
+.about__info-name {
+    font-family: 'lifehackmedium';
+    font-size: 24px;
+    color: $black;
+    margin-bottom: 20px;
+}
+
+
+.about__info-text {
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    color: $black;
+    opacity: .8;
+}

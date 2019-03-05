@@ -1,0 +1,54 @@
+.reviews {
+    background: black;
+    position: relative;
+}
+
+.reviews__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    width: 25%;
+    height: 50%;
+    background: center center / cover no-repeat;
+    position: relative;
+    filter: grayscale(100%);
+
+    &:hover {
+        .reviews__item-hover {
+        opacity: 1;
+        }
+    }
+}
+
+.reviews__item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#000, .5);
+    padding: 50px 25px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.reviews__name {
+    font-family: 'gagalinregular';
+
+}
+
+.reviews__comment {
+    font-family: 'ubuntulight';
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
