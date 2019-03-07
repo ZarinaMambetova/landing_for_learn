@@ -3,6 +3,7 @@ $orange: #f9b43b;
 $black: #2f3234; 
 $red: #e45028;
 
+@import "layout/mixins";
 @import "normalize";
 @import "layout/fonts";
 @import "layout/header";
@@ -16,7 +17,8 @@ $red: #e45028;
 @import "layout/reviews";
 @import "layout/work";
 @import "layout/order";
-@import "layout/contacts";
+@import "layout/contacts"; 
+@import "layout/owl.carousel";
 
 
 

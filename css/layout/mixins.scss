@@ -1,0 +1,25 @@
+$tablet-width: 768px;
+$phone-width: 320px;
+
+@mixin tablet {
+    @media (min-width: #{480px}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (min-width: #{$phone-width}) and (max-width: #{480px - 1px}) {
+        @content;
+    }
+}
+
+$baseFontSize: 14;
+@function rem($pixels, $context: $baseFontSize) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
+} 
