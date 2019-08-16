@@ -3,8 +3,8 @@ $orange: #f9b43b;
 $black: #2f3234; 
 $red: #e45028;
 
-@import "layout/mixins";
 @import "normalize";
+@import "layout/mixins";
 @import "layout/fonts";
 @import "layout/header";
 @import "layout/hero";
